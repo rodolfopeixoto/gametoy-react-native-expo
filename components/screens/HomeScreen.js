@@ -5,18 +5,22 @@ import categoryList from "../../fixtures/category";
 import Text from "../Text";
 import brand from "./../../assets/brand.png";
 import games from "./../../fixtures/gameData";
-export const HomeScreen = () => {
+export const HomeScreen = ({ navigation }) => {
   const [selectedCategory, setSelectedCategory] = useState("All");
   const gameRef = useRef();
 
   const changeCategory = (category) => {
     setSelectedCategory(category);
-    gameRef.current.scrollToOffset({x: 0, y: 0});
+    gameRef.current.scrollToOffset({ x: 0, y: 0 });
   };
 
   const GameItem = (game) => {
     return (
-      <Game>
+      <Game
+        onPress={() => {
+          navigation.navigate("GameScreen", { game: game });
+        }}
+      >
         <GameCover source={game.cover} />
         <GameInfo backgroundColor={game.backgroundColor}>
           <GameImage source={game.cover} />
