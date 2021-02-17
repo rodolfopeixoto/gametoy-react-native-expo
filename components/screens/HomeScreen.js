@@ -87,7 +87,8 @@ export default HomeScreen;
 
 const Container = styled.SafeAreaView`
   flex: 1;
-  background-color: #343434;
+  background-color: #545454;
+  margin-top: 50px;
 `;
 
 const Header = styled.View`

@@ -17,8 +17,8 @@ const TabNav = createBottomTabNavigator();
 const tabBarOptions = {
   showLabel: false,
   style: {
-    backgroundColor: "#343434",
-    borderTopColor: "#343434",
+    backgroundColor: "#545454",
+    borderTopColor: "#545454",
   },
 };
 
@@ -75,7 +75,7 @@ export default function App() {
 }
 
 export const TabBarIconContainer = styled.View`
-  background-color: ${(props) => (props.focused ? "#819ee5" : "#343434")};
+  background-color: ${(props) => (props.focused ? "#819ee5" : "#545454")};
   padding: 2px 16px;
   border-radius: 32px;
 `;

@@ -90,7 +90,7 @@ export default function GameScreen({ route, navigation }) {
 }
 
 export const GameContainer = styled.View`
-  background-color: #343434;
+  background-color: #545454;
   flex: 1;
 `;
 export const GameArtContainer = styled.View`
